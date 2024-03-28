@@ -4,8 +4,8 @@ from selene import browser, have
 
 class AddToFavorites:
     @allure.step('Открываем браузер на странице https://kazanexpress.ru/')
-    def open_fav(self):
-        browser.open_fav('/')
+    def open(self):
+        browser.open('/')
         return self
 
     @allure.step('Находим и добавляем товар в избранное')
