@@ -25,7 +25,7 @@ class AddToFavorites:
 class DeleteFromFavorites:
     @allure.step('Открываем браузер на странице https://kazanexpress.ru/')
     def open(self):
-        browser.open_fav('/')
+        browser.open('/')
         return self
 
     @allure.step('Находим и добавляем товар в избранное')
